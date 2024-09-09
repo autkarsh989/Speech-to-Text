@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech to Text</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 10px;
+      width: 80%;
+      border: 1px solid #ccc;
+      min-height: 50px;
+      background-color: #f9f9f9;
+      white-space: pre-wrap;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    #copy-btn {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Speech to Text Converter</h1>
+
+  <label for="language">Select Language: </label>
+  <select id="language">
+    <option value="en-US">English (US)</option>
+    <option value="es-ES">Spanish (Spain)</option>
+    <option value="fr-FR">French (France)</option>
+    <option value="de-DE">German (Germany)</option>
+    <option value="hi-IN">Hindi (India)</option>
+    <!-- Add more language options as needed -->
+  </select>
+
+  <br><br>
+
+  <button id="start-btn">Start Speaking</button>
+  <button id="copy-btn">Copy Text</button>
+
+  <div id="result">Your transcribed text will appear here...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
